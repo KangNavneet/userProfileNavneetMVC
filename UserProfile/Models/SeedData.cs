@@ -27,6 +27,9 @@ namespace UserProfile.Models
                     new UserDetails
                     {
                         userName = "Tom",
+                        alias="tomAlias",
+                        website="tom.ca",
+                        socialUrl="friends.com/tom",
                         email = "tom@gmail.com",
                         dob = DateTime.Parse("1989-2-12"),
                         
@@ -35,6 +38,9 @@ namespace UserProfile.Models
                     new UserDetails
                     {
                         userName = "Jerry",
+                        alias = "jerryAlias",
+                        website = "jerry.ca",
+                        socialUrl = "friends.com/jerry",
                         email = "jerry@gmail.com",
                         dob = DateTime.Parse("1989-2-24"),
                     },
@@ -42,6 +48,9 @@ namespace UserProfile.Models
                     new UserDetails
                     {
                         userName = "Pickachu",
+                        alias = "pickachuAlias",
+                        website = "pickachu.ca",
+                        socialUrl = "friends.com/pickachu",
                         email = "pickachu@gmail.com",
                         dob = DateTime.Parse("1989-3-12"),
                     },
@@ -49,6 +58,9 @@ namespace UserProfile.Models
                     new UserDetails
                     {
                         userName = "Tweety",
+                        alias = "tweetyAlias",
+                        website = "tweety.ca",
+                        socialUrl = "friends.com/tweety",
                         email = "tweety@gmail.com",
                         dob = DateTime.Parse("1989-4-12"),
                     }

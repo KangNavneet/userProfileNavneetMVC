@@ -19,14 +19,26 @@
     <thead>
         <tr>
             <th>
-                
+
                 User Name
             </th>
             <th>
-               Email
+
+                Alias
             </th>
             <th>
-               Date Of Birth
+
+                Website
+            </th>
+            <th>
+
+               Social Profile
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Date Of Birth
             </th>
             <th>User Controls</th>
         </tr>
@@ -36,6 +48,15 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.userName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.alias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.website)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.socialUrl)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.email)

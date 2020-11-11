@@ -10,7 +10,7 @@ using UserProfile.Data;
 namespace UserProfile.Migrations
 {
     [DbContext(typeof(UserProfileContext))]
-    [Migration("20201109033554_InitialCreate")]
+    [Migration("20201111030833_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,9 +32,11 @@ namespace UserProfile.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("friendsEmail")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("profileImgUrl")
@@ -54,14 +56,32 @@ namespace UserProfile.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("alias")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
+
                     b.Property<DateTime>("dob")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("socialUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
+
                     b.Property<string>("userName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
+
+                    b.Property<string>("website")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.HasKey("Id");
 

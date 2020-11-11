@@ -9,10 +9,26 @@ namespace UserProfile.Models
     public class UserDetails
     {
         public int Id { get; set; }
-        [Display(Name = "User Name")]
+        [Display(Name = "Real Name")]
         [StringLength(60, MinimumLength = 3)]
         [Required]
         public string userName { get; set; }
+
+        [Display(Name = "Alias")]
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
+        public string alias { get; set; }
+
+        [Display(Name = "Website")]
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
+        public string website { get; set; }
+
+
+        [Display(Name = "Social Url")]
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
+        public string socialUrl { get; set; }
 
         [Display(Name = "Email")]
         [Required(ErrorMessage = "The email address is required")]
@@ -22,6 +38,8 @@ namespace UserProfile.Models
         [Display(Name = "Date Of Birth")]
         [DataType(DataType.Date)]
         public DateTime dob { get; set; }
+
+
 
         public ICollection<SocialDetails>userToSocialFK { get; set; }
 
