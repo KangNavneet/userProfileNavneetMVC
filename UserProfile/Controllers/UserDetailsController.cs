@@ -62,7 +62,7 @@ namespace UserProfile.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,userName,email,dob")] UserDetails userDetails)
+        public async Task<IActionResult> Create([Bind("Id,userName,alias,website,socialUrl,email,dob")] UserDetails userDetails)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace UserProfile.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,userName,email,dob")] UserDetails userDetails)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,userName,alias,website,socialUrl,email,dob")] UserDetails userDetails)
         {
             if (id != userDetails.Id)
             {

@@ -543,3 +543,4 @@ C:\Users\navne\source\repos\userProfileNavneetMVC\UserProfile\obj\Debug\netcorea
 C:\Users\navne\source\repos\userProfileNavneetMVC\UserProfile\obj\Debug\netcoreapp3.1\UserProfile.dll
 C:\Users\navne\source\repos\userProfileNavneetMVC\UserProfile\obj\Debug\netcoreapp3.1\UserProfile.pdb
 C:\Users\navne\source\repos\userProfileNavneetMVC\UserProfile\obj\Debug\netcoreapp3.1\UserProfile.genruntimeconfig.cache
+C:\Users\navne\source\repos\userProfileNavneetMVC\UserProfile\obj\Debug\netcoreapp3.1\UserProfile.csprojAssemblyReference.cache

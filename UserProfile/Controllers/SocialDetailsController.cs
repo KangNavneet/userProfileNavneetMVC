@@ -23,7 +23,7 @@ namespace UserProfile.Controllers
         public async Task<IActionResult> Index(string searchStringSocial)
         {
             var socialDetails = from m in _context.SocialDetails
-                              select m;
+                                select m;
 
             if (!String.IsNullOrEmpty(searchStringSocial))
             {
@@ -32,6 +32,7 @@ namespace UserProfile.Controllers
 
             return View(await socialDetails.ToListAsync());
         }
+
         // GET: SocialDetails/Details/5
         public async Task<IActionResult> Details(int? id)
         {
